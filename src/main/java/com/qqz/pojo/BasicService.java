@@ -15,7 +15,16 @@ public class BasicService {
 
     private boolean active;
 
-    private String address;
 
-    private int count;
+    private long second;
+
+    public BasicService(long second){
+        this.second = second;
+        this.active = true;
+    }
+
+    public void beat(){
+        second = System.currentTimeMillis();
+    }
+
 }
